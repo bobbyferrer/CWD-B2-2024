@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontawesome icons -->
+    <script src="https://kit.fontawesome.com/6a79530112.js" crossorigin="anonymous"></script>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+    <title>Navbar & sidenav</title>
+</head>
+<body class="grey lighten-3">
+    <div class="navbar-fixed">
+        <nav class="deep-purple">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="" class="brand-logo">
+                        <i class="fa-solid fa-font-awesome"></i>
+                    </a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li>
+                            <a href="">Home</a>
+                        </li>
+                        <li>
+                            <a href="">About</a>
+                        </li>
+                        <li>
+                            <a href="">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <h2 class="center">Navbar</h2>
+    <div class="divider"></div>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m10">
+                <p>The navbar is fully contained by an HTML5 Nav tag. Inside a recommended container div, there are 2 main parts of the navbar. A logo or brand link, and the navigations links. You can align these links to the left or right.</p>
+                <h3>Right Aligned Links</h3>
+                <p>To right align your navbar links, just add a right class to your <'ul'> that contains them.</p>
+                <!-- Right Aligned Links -->
+                <div class="navbar-fixed">
+                    
+                </div>
+                <nav class="pink">
+                    <div class="container">
+                        <div class="nav-wrapper">
+                            <a href="" class="brand-logo">
+                                <i class="fa-solid fa-font-awesome"></i>
+                            </a>
+                            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                                <li>
+                                    <a href="">Home</a>
+                                </li>
+                                <li>
+                                    <a href="">About</a>
+                                </li>
+                                <li>
+                                    <a href="">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!-- Left Aligned Links -->
+                <h3>Left Aligned Links</h3>
+                <p>To left align your navbar links, just add a left class to your <'ul'> that contains them.</p>
+                <nav class="pink darken-3">
+                    <div class="container">
+                        <div class="nav-wrapper">
+                            <a href="" class="brand-logo right">
+                                <i class="fa-solid fa-font-awesome"></i>
+                            </a>
+                            <ul id="nav-mobile" class="left hide-on-med-and-down">
+                                <li>
+                                    <a href="">Home</a>
+                                </li>
+                                <li>
+                                    <a href="">About</a>
+                                </li>
+                                <li>
+                                    <a href="">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!-- Centering the logo -->
+                <h2>Centering the logo</h2>
+                <p>The logo will center itself on medium and down screens, but if you want the logo to always be centered, add the center class to your <'a class="brand-logo"''>. You will have to make sure yourself that links do not overlap if you use this.</p>
+                <nav class="red darken-4">
+                    <div class="">
+                        <div class="nav-wrapper">
+                            <a href="" class="brand-logo center">
+                                <i class="fa-solid fa-font-awesome"></i>
+                            </a>
+                            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                                <li>
+                                    <a href="">Home</a>
+                                </li>
+                                <li>
+                                    <a href="">About</a>
+                                </li>
+                                <li>
+                                    <a href="">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!-- Active Items -->
+                <h3>Active Items</h3>
+                <p>Add active class to your li tags to denote the current page.</p>
+                <nav class="red">
+                    <div class="container">
+                        <div class="nav-wrapper">
+                            <a href="" class="brand-logo">
+                                <i class="fa-solid fa-font-awesome"></i>
+                            </a>
+                            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                                <li class="active">
+                                    <a href="">Home</a>
+                                </li>
+                                <li>
+                                    <a href="">About</a>
+                                </li>
+                                <li>
+                                    <a href="">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!-- Extended Navbar with Tabs -->
+                <h3>Extended Navbar with Tabs</h3>
+                <p>To add extended components to the navbar, add the class nav-extended to the outer nav tag. This will allow your navbar height to be variable. Then you can just include a tabs component inside the nav-wrapper.</p>
+                <nav class="purple darken-3 nav-extended">
+                    <div class="container">
+                        <div class="nav-wrapper">
+                            <a href="#!" data-target="mobile-demo" class="sidenav-trigger">
+                                <i class="fa-solid fa-bars"></i>
+                            </a>
+                            <a href="" class="brand-logo">
+                                <i class="fa-solid fa-font-awesome"></i>
+                            </a>
+                            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                                <li class="active">
+                                    <a href="">Home</a>
+                                </li>
+                                <li>
+                                    <a href="">About</a>
+                                </li>
+                                <li>
+                                    <a href="">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="nav-content">
+                            <!-- tabs -->
+                            <ul class="tabs tabs-transparent">
+                                <li class="tab">
+                                    <a href="#kits">Kits</a>
+                                </li>
+                                <li class="tab">
+                                    <a href="#icons">Icons</a>
+                                </li>
+                                <li class="tab">
+                                    <a href="#docs">Docs</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!-- sidenav structure -->
+                <ul class="sidenav purple darken-3" id="mobile-demo">
+                    <div class="row">
+                        <div class="col s6 offset-s5">
+                            <a href="">
+                                <i class="fa-solid fa-font-awesome white-text medium" id="sidenav-icons"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <li class="active">
+                        <a href="" class="white-text">
+                            <i class="fa-solid fa-house white-text"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="white-text">
+                            <i class="fa-solid fa-address-card white-text"></i>
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="white-text">
+                            <i class="fa-solid fa-id-card-clip white-text"></i>
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+                <!-- tabs structure -->
+                <div class="row">
+                    <div class="col s12" id="kits">
+                        <img src="images/img1.jpg" alt="" class="responsive-img">
+                    </div>
+                    <div class="col s12" id="icons">
+                        <img src="images/img2.jpg" alt="" class="responsive-img">
+                    </div>
+                    <div class="col s12" id="docs">
+                        <img src="images/img4.jpg" alt="" class="responsive-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div style="height: 1000px;"></div>
+
+
+    
+
+
+
+
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+         $('.sidenav').sidenav({
+            edge: 'right'
+         });
+        //  tabs init
+        $('.tabs').tabs();
+      });
+    </script>
+</body>
+</html>
